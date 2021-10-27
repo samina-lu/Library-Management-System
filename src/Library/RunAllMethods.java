@@ -4,8 +4,8 @@ package Library;
 import java.util.Scanner;
 
 
-public class RunAllMethods extends Book{
-      void runMethods()
+public class RunAllMethods extends Library{
+      public void runMethods()
     {
        Scanner sc= new Scanner(System.in);
        while (true){
@@ -13,7 +13,8 @@ public class RunAllMethods extends Book{
                        "Press 1 for Issue Books\n" +
                        "Press 2 for Return Books\n" +
                        "Press 3 for Add new Books\n" +
-                       "Press 4 for List of available Books");
+                       "Press 4 for List of available Books\n" +
+                       "Press 5 for exit\n");
                System.out.print("\nType here: ");
                int user = sc.nextInt();
 
@@ -30,6 +31,9 @@ public class RunAllMethods extends Book{
                case 4:
                    availableBooks();
                    break;
+               case 5:
+           
+                   System.exit(0);
                default:
                    System.out.println("Something Wrong!Please enter again");
                    break;
@@ -38,9 +42,6 @@ public class RunAllMethods extends Book{
     }        
 
 
-    public static void main(String[] args) {
-       RunAllMethods run = new RunAllMethods();
-       run.runMethods();
-    }
+  
 }
 

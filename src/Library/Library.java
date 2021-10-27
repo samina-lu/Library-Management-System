@@ -2,7 +2,7 @@ package Library;
 import java.util.Calendar;
 import java.util.Scanner;
 
-public class Book implements LibraryMethods{
+public class Library implements LibraryMethods{
 
 
     String  department_of_cse[] = new String[100]; 
@@ -11,7 +11,7 @@ public class Book implements LibraryMethods{
     int book1=0,book2=0;
     String author_of_the_book;
 
-    Book()
+    Library()
     {
     department_of_cse[0] = "Algorithm" ;
     department_of_cse[1] = "Mathmatics in computing";
