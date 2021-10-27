@@ -55,7 +55,7 @@ public class Library implements LibraryMethods{
     }
 
     @Override
-    public void Author_of_Book()
+    public void authorOfBook()
     {
        Scanner sc = new Scanner(System.in);
         System.out.print("\nPlease enter author of book: ");
@@ -110,7 +110,7 @@ public class Library implements LibraryMethods{
         Scanner sc = new Scanner(System.in);
         System.out.print("\nEnter this name of book you want to add: ");
         String user2 = sc.next();
-        Author_of_Book();
+        authorOfBook();
         this.new_book[book1] = user2;
         book1++;
         System.out.println("\nThis book is Successfully added to the library");
